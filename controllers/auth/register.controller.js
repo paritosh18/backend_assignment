@@ -28,13 +28,10 @@ module.exports = {
             email,
             password: password_hash,
         }
-
-       const newUser =  await userService.create(user);
+         await userService.create(user);
        
-        const tokens = await tokenservice.generateAuthTokens(newUser);
-    
         
-        return res.status(201).json(new ApiResponse(201,{tokens}, 'User registered successfully'));
+        return res.status(201).json(new ApiResponse(201,{user}, 'User registered successfully'));
 
     })
 
