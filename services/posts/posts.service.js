@@ -27,12 +27,12 @@ module.exports = {
             if (endDate) filter.uploadTime.$lte = new Date(endDate);
         }
 
-        // Tags filter
+        
         if (tags && tags.length) {
             filter.tags = { $in: tags };
         }
 
-        // Fetch posts with pagination
+       
         const posts = await Post.find(filter)
             .skip(Number(offset))
             .limit(Number(limit));
