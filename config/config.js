@@ -10,8 +10,6 @@ const envVarsSchema = Joi.object({
     JWT_SECRET: Joi.string().required().messages({ 'any.required': 'JWT secret key is required' }),
     JWT_ACCESS_EXPIRATION_MINUTES: Joi.number().default(30).required().messages({ 'any.required': 'Access token expiration time is required' }),
     JWT_REFRESH_EXPIRATION_DAYS: Joi.number().default(30).required().messages({ 'any.required': 'Refresh token expiration time is required' }),
-    JWT_RESET_PASSWORD_EXPIRATION_MINUTES: Joi.number().default(10).required().messages({ 'any.required': 'Password reset token expiration time is required' }),
-    JWT_VERIFY_EMAIL_EXPIRATION_MINUTES: Joi.number().default(10).required().messages({ 'any.required': 'Email verification token expiration time is required' }),
     MONGO_URI: Joi.string().required().messages({ 'any.required': 'MongoDB connection URI is required' }),
     MONGO_DB_NAME: Joi.string().required().messages({ 'any.required': 'MongoDB database name is required' }),
 }).unknown(true);
