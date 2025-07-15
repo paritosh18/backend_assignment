@@ -9,8 +9,8 @@ const defaultRoutes = [
 		route: require('./auth'),
 	},
 	{
-		path:'/posts',
-		route:require('./posts')
+		path:'/books',
+		route:require('./books')
 	}
 
 ];

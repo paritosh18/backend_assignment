@@ -15,9 +15,6 @@ module.exports = {
             password,
         } = req.body;
 
-        if (!name || !email || !password) {
-            throw new ApiError(400, 'All fields are required');
-        }
         const existingUser = await userService.findByEmail(email);
         if (existingUser) {
             throw new ApiError(400, 'User already exists');

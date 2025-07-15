@@ -1,5 +1,7 @@
+
+
 module.exports = {
  signupSchema:require("./auth/signup.schema"),
- postSchema:require("./posts/post.schema"),
+ bookSchema:require("./books/book.schema"),
  loginSchema:require("./auth/login.schema")
 }

@@ -21,7 +21,7 @@ if (error) {
 }
 
 module.exports = {
-    env: envVars.NODE_ENV,
+    env: envVars.NODE_ENV,   
     port: envVars.PORT,
     mongodb: {
         uri: envVars.MONGO_URI,

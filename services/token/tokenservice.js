@@ -89,4 +89,8 @@ module.exports = {
 		};
 	},
 	generateToken,
+
+	generateaccessToken: async(token)=> {
+		
+	}
 };

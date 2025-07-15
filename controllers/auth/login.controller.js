@@ -30,4 +30,6 @@ module.exports = {
             .json(new ApiResponse(200, { ...tokens }, 'Logged in succesfully.'));
 
     }),
-}
+
+    
+} 
